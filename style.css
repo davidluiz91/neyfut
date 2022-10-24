@@ -15,7 +15,7 @@ html {
 }
 
 body {
-  background-color: #fcfbff;
+  background-color: #845EC2;
   display: flex;
   justify-content: center;
 }
@@ -34,6 +34,10 @@ main {
 
 /* HEADER */
 
+.logo {
+  color: white;
+}
+
 header {
   display: flex;
   align-items: center;
@@ -43,7 +47,7 @@ header {
   position: fixed;
   top: 0;
   z-index: 999;
-  background-color: #fcfbff;
+  background-color: #845EC2;
   box-shadow: 0 1px 0 #ececec;
   max-width: 1120px;
   width: 100%;
@@ -57,7 +61,7 @@ header {
 a {
   cursor: pointer;
   text-decoration: none;
-  color: black;
+  color: white;
 }
 
 /* HOME */
@@ -72,6 +76,7 @@ section#home {
 }
 
 .home-info {
+  color: white;
   width: 50%;
   display: flex;
   flex-direction: column;
@@ -137,75 +142,12 @@ section#home {
   gap: 30px;
 }
 
-#trailer form {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  max-width: 400px;
-  width: 100%;
-  padding: 5px 20px;
-}
-
-input, textarea, button {
-  box-shadow: 0 1px 2px #ddd;
-  border: none;
-  padding: 10px;
-  border-radius: 5px;
-  outline: none;
-  resize: none;
-}
-
-#trailer form button {
-  background-color: #7700ff;
-  color: white;
-  font-size: 18px;
-  cursor: pointer;
-  opacity: 0.9;
-}
-
-#trailer form button:hover{
-  opacity: 1;
-}
-
 /* FOOTER */
 
 footer {
+  color: white;
   box-shadow: 0px -1px 0px 0px #ececec;
   padding: 50px;
   text-align: center;
 }
 
-/* MOBILE */
-
-@media (max-width: 450px) {
-  header {
-    justify-content: center;
-  }
-  
-  .logo {
-    display: none;
-  }
-
-  section#home {
-    flex-direction: column-reverse;
-    justify-content: center;
-  }
-
-  .home-info, .home-img {
-    width: 100%;
-    padding: 10px;
-  }
-
-  .swiper-slide {
-    flex-direction: column-reverse;
-    gap: 30px;
-  }
-
-  .jogo-img {
-    width: 100%;
-  }
- 
-  .jogo-info {
-    width: 80%;
-  }
-}
